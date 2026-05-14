@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/devforth/adminforth-github-oauth-adapter.git"
+    "url": "https://github.com/devforth/adminforth-oauth-adapter-github.git"
   },
   "publishConfig": {
     "access": "public"
