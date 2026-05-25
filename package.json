@@ -1,5 +1,5 @@
 {
-  "name": "@adminforth/github-oauth-adapter",
+  "name": "@adminforth/oauth-adapter-github",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -35,7 +35,7 @@
       [
         "semantic-release-slack-bot",
         {
-          "packageName": "@adminforth/github-oauth-adapter",
+          "packageName": "@adminforth/oauth-adapter-github",
           "notifyOnSuccess": true,
           "notifyOnFail": true,
           "slackIcon": ":package:",
