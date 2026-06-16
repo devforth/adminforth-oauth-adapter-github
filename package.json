@@ -12,6 +12,7 @@
   "license": "MIT",
   "description": "",
   "devDependencies": {
+    "adminforth": "^2.73.1",
     "semantic-release": "^24.2.1",
     "semantic-release-slack-bot": "^4.0.2"
   },
@@ -23,7 +24,6 @@
     "access": "public"
   },
   "dependencies": {
-    "adminforth": "^2.58.1",
     "typescript": "^5.7.3"
   },
   "release": {
@@ -50,5 +50,8 @@
         "prerelease": true
       }
     ]
+  },
+  "peerDependencies": {
+    "adminforth": "^2.73.1"
   }
 }
