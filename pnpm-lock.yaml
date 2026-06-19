@@ -14,7 +14,7 @@ importers:
     devDependencies:
       adminforth:
         specifier: ^3.0.1
-        version: 3.0.1(@types/node@25.7.0)
+        version: 3.2.4(@types/node@25.7.0)
       semantic-release:
         specifier: ^24.2.1
         version: 24.2.9(typescript@5.9.3)
@@ -370,15 +370,15 @@ packages:
     resolution: {integrity: sha512-PYAthTa2m2VKxuvSD3DPC/Gy+U+sOA1LAuT8mkmRuvw+NACSaeXEQ+NHcVF7rONl6qcaxV3Uuemwawk+7+SJLw==}
     engines: {node: '>= 0.6'}
 
-  adminforth@3.0.1:
-    resolution: {integrity: sha512-pSgPBDyo+tLY4wnRPaZ/HG7oINv6LR3VfgNwnhNZPFJvEE1DgQqb3+nknKuEkx3bSeJEOXoBd8OvNA98QzzRVA==}
+  adminforth@3.2.4:
+    resolution: {integrity: sha512-zR9LXnWvTN8yWqjdlMpZO8rroKI5cmCM3Pyuhot0tneeqx7cceb4relitoROjsjWKHvvlU+X8LQPvvXwRB5O3w==}
     hasBin: true
     peerDependencies:
-      '@adminforth/connector-clickhouse': ^1.0.1
-      '@adminforth/connector-mongo': ^1.0.0
-      '@adminforth/connector-mysql': ^1.0.0
-      '@adminforth/connector-postgres': ^1.0.0
-      '@adminforth/connector-sqlite': ^1.0.0
+      '@adminforth/connector-clickhouse': ^1.0.2
+      '@adminforth/connector-mongo': ^1.0.1
+      '@adminforth/connector-mysql': ^1.0.1
+      '@adminforth/connector-postgres': ^1.0.1
+      '@adminforth/connector-sqlite': ^1.0.1
     peerDependenciesMeta:
       '@adminforth/connector-clickhouse':
         optional: true
@@ -1408,8 +1408,8 @@ packages:
   mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
 
-  nanoid@3.3.12:
-    resolution: {integrity: sha512-ZB9RH/39qpq5Vu6Y+NmUaFhQR6pp+M2Xt76XBnEwDaGcVAqhlvxrl3B2bKS5D3NH3QR76v3aSrKaF/Kiy7lEtQ==}
+  nanoid@3.3.13:
+    resolution: {integrity: sha512-sPdqC6ByMVVGvF1ynvvMo0/o+oD1VX7DaHhijt1bFgjvBkHBib4t49GoNDhf2NDta4oeUNlaGbSt5K7qjZ955Q==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
@@ -2669,7 +2669,7 @@ snapshots:
       mime-types: 2.1.35
       negotiator: 0.6.3
 
-  adminforth@3.0.1(@types/node@25.7.0):
+  adminforth@3.2.4(@types/node@25.7.0):
     dependencies:
       '@babel/parser': 7.29.3
       '@faker-js/faker': 9.9.0
@@ -3743,7 +3743,7 @@ snapshots:
       object-assign: 4.1.1
       thenify-all: 1.6.0
 
-  nanoid@3.3.12: {}
+  nanoid@3.3.13: {}
 
   nanoid@5.1.11: {}
 
@@ -3947,7 +3947,7 @@ snapshots:
 
   postcss@8.5.15:
     dependencies:
-      nanoid: 3.3.12
+      nanoid: 3.3.13
       picocolors: 1.1.1
       source-map-js: 1.2.1
 

@@ -1,15 +1,6 @@
-import type { OAuth2Adapter } from "adminforth";
+import type { OAuth2Adapter, OAuth2UserInfo } from "adminforth";
 
-type OAuth2UserInfoLocal = {
-  email: string;
-  provider?: string;
-  subject?: string;
-  phone?: string;
-  meta?: Record<string, any>;
-  fullName?: string;
-  profilePictureUrl?: string | null;
-  externalUserId?: string | number | null;
-};
+
 import type { GithubEmail } from "./types.js";
 export default class AdminForthAdapterGithubOauth2 implements OAuth2Adapter {
     private clientID: string;
@@ -34,9 +25,7 @@ export default class AdminForthAdapterGithubOauth2 implements OAuth2Adapter {
       return url;
     }
   
-    async getTokenFromCode(code: string, redirect_uri: string): Promise<OAuth2UserInfoLocal> {
-      console.log('Getting token from code:', code);
-      
+    async getTokenFromCode(code: string, redirect_uri: string): Promise<OAuth2UserInfo> {
       // Exchange code for token
       const tokenResponse = await fetch('https://github.com/login/oauth/access_token', {
         method: 'POST',
